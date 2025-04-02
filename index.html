@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>할인 코드 안내</title>
+  <title>할인코드 안내</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -19,47 +19,47 @@
 
     h1 {
       color: #333;
-      margin-bottom: 20px;
       font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     .speech-bubble {
       position: relative;
+      max-width: 300px; /* 말풍선의 최대 너비를 줄임 */
       margin: 10px 0;
-      padding: 15px 20px;
-      background-color: #ffeb3b; /* 메인 배경색 (노란색) */
+      padding: 10px 15px; /* 내부 여백 감소 */
+      background-color: #ffeb3b;
       color: #333;
-      font-size: 18px;
+      font-size: 16px; /* 텍스트 크기를 조금 줄임 */
       font-weight: bold;
-      border-radius: 15px;
+      border-radius: 10px; /* 둥근 모서리 크기 조정 */
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-      width: auto;
-      max-width: 400px;
       text-align: center;
     }
 
     .speech-bubble:after {
       content: '';
       position: absolute;
-      bottom: -15px; /* 삼각형이 말풍선 아래쪽에 위치 */
+      bottom: -10px; /* 말풍선 꼬리 크기 줄임 */
       left: 50%;
       transform: translateX(-50%);
       width: 0;
       height: 0;
-      border: 15px solid transparent;
-      border-top-color: #ffeb3b;
+      border: 10px solid transparent; /* 꼬리의 크기를 작게 조정 */
+      border-top-color: #ffeb3b; /* 꼬리 색상 */
     }
 
     .code {
       display: block;
-      margin-top: 10px;
-      font-size: 20px;
-      background-color: #ffeb3b; /* 할인 코드 배경도 노란색으로 변경 */
-      color: #d32f2f; /* 텍스트 색상 (붉은색) */
-      border-radius: 5px; /* 둥근 모서리 */
-      padding: 5px 10px;
+      margin-top: 8px;
+      font-size: 18px; /* 할인코드의 글자 크기 유지 */
+      background-color: #ffeb3b;
+      color: #d32f2f;
       font-weight: bold;
-      box-shadow: none; /* 그림자 제거 */
+      border-radius: 5px;
+      padding: 5px 10px;
+      text-align: center;
     }
   </style>
 </head>
@@ -67,24 +67,23 @@
   <h1>할인코드 안내</h1>
 
   <div class="speech-bubble">
-    마이리얼트립 4월 할인쿠폰 (20만 원 이상)
+    마이리얼트립 4월 할인쿠폰<br>(20만 원 이상)
     <span class="code">1234</span>
   </div>
 
   <div class="speech-bubble">
-    마이리얼트립 4월 할인쿠폰 (10만 원 이상)
+    마이리얼트립 4월 할인쿠폰<br>(10만 원 이상)
     <span class="code">5678</span>
   </div>
 
   <div class="speech-bubble">
-    마이리얼트립 4월 할인코드 (5만 원 이상)
+    마이리얼트립 4월 할인코드<br>(5만 원 이상)
     <span class="code">ABCD</span>
   </div>
 
   <div class="speech-bubble">
-    마이리얼트립 한인민박 할인코드
+    한인민박 할인코드
     <span class="code">WXYZ</span>
   </div>
-
 </body>
 </html>
